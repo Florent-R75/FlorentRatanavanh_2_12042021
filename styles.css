@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/raleway-v19-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/raleway-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/raleway-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/raleway-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/raleway-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/raleway-v19-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+  }
+  
+  p
+    {
+      font-family: 'raleway-v19-regular', Arial, Helvetica, sans-serif;
+    }
+
+    #conteneur1
+        {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .element1 
+        {
+            margin: 20px;
+            color : #0065FC;
+        }
+        
+        .element2
+        {
+            margin: 20px;
+            color : #0065FC;
+        }
+
+        .element3
+
+        {
+            margin: 20px;
+            color : #0065FC;
+        }
+        
+
+        body
+
+        {
+            background-image: url(images/logo/Reservia1.svg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        #meet
+
+        {
+            width: 12px;
+            background-color: #F2F2F2;
+            margin-top: 5px;
+            padding-right: 3px;
+        }
+
+        h1
+        {
+            font-family: 'raleway-v19-regular',Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        h2
+        {
+            font-family: 'raleway-v19-regular',Arial, Helvetica, sans-serif;
+            font-size: 0.9em ;
+            font-weight: lighter;
+            opacity: 0.8;
+        }
+
+        .section1
+        {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .champ
+        {
+            margin: 5px;
+            padding-left: 4px;
+        }
+
+        .recherche
+        {
+            padding: 7px;
+        }
+
+        
