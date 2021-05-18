@@ -13,60 +13,63 @@
 
     <body>
         <!-- En-tête de page-->
+        <!--Convention de nommage des attributs BEM et Atomic CSS-->
 
-        <header id="banniere">
-            <div class="logo">
+        <header class="nav">
+            <div class="nav__logo">
                 <img src="images/logo/reservia.png" alt="logo" width="91px"
                     height="42px" />
             </div>
 
-            <ul class="nav">
-                <li><a class="li1" href="#hebergements">Hébergements</a></li>
-                <li><a class="li2" href="#activites">Activités</a></li>
-                <li><a class="li3" href="inscription">S'Inscrire</a></li>
+            <ul class="nav__bar">
+                <li><a class="nav__bar__btn grey" href="#hebergements">Hébergements</a></li>
+                <li><a class="nav__bar__btn grey" href="#activites">Activités</a></li>
+                <li><a class="nav__bar__btn blue sign" href="inscription">S'Inscrire</a></li>
             </ul>
         </header>
 
+        <!-- Titres -->
+
+        <h1 class="title--big">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h3 class="title--small">En plein centre ville ou en pleine nature</h3>
+
         <!-- Barre de Recherche -->
 
-        <h1 class="titre-1">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <h3 class="titre-2">En plein centre ville ou en pleine nature</h3>
-
-        <div class="btn-groupe">
-            <button class="bouton1"><i class="fas fa-map-marker-alt"></i></button>
-            <button class="bouton2">
+        <div class="search">
+            <button class="search__logo"><i class="fas fa-map-marker-alt"></i></button>
+            <button class="search__form">
                 <form method="POST" action="treatment.php">
-                    <input type="text" name="recherche" class="champ"
+                    <input type="text" name="recherche" class="search__field"
                         placeholder="Marseille, France" />
                 </form>
             </button>
 
-            <button class="bouton3">Rechercher</button>
+            <button class="search__btn">Rechercher</button>
         </div>
 
         <!-- Boutons de Filtres-->
 
-        <div class="filtres">
-            <button class="ft1">Filtres</button>
+        <div class="filters">
+            <button class="filters__title">Filtres</button>
 
-            <div class="btf">
-                <button class="ft2"><i class="fas fa-money-bill-wave"></i></button>
-                <button class="ft3">Economique</button>
+            <div class="filters__big">
+                <button class="filters__logo"><i class="fas fa-money-bill-wave"></i></button>
+                <button class="filters__btn">Economique</button>
             </div>
 
-            <div class="btf2">
-                <button class="ft2"><i class="fas fa-child"></i></button>
-                <button class="ft3">Familial</button>
+            <div class="filters__small">
+                <button class="filters__logo"><i class="fas fa-child"></i></button>
+                <button class="filters__btn--familial">Familial</button>
             </div>
 
-            <div class="btf">
-                <button class="ft2"><i class="fas fa-heart"></i></button>
-                <button class="ft3">Romantique</button>
+            <div class="filters__big">
+                <button class="filters__logo"><i class="fas fa-heart"></i></button>
+                <button class="filters__btn">Romantique</button>
             </div>
 
-            <div class="btf">
-                <button class="ft4"><i class="fas fa-dog"></i></button>
-                <button class="ft5">Animaux autorisés</button>
+            <div class="filters__big">
+                <button class="filters__logo--dog"><i class="fas fa-dog"></i></button>
+                <button class="filters__btn--animals">Animaux autorisés</button>
             </div>
         </div>
 

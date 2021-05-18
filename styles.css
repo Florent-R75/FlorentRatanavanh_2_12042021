@@ -36,16 +36,16 @@ i {
 
 /* En Tête */
 
-#banniere {
+.nav {
   display: flex;
   justify-content: space-between;
 }
-.logo {
+.nav__logo {
   margin: 1.2rem 1.2rem;
   padding: 0px;
 }
 
-.nav {
+.nav__bar {
   display: flex;
   margin: 0px;
   padding: 40px;
@@ -53,25 +53,20 @@ i {
   font-size: 0.9rem;
 }
 
-.li1 {
+.nav__bar__btn {
   padding: 38px;
-  color: grey;
   text-decoration: none;
 }
 
-.li2 {
-  padding: 38px;
+.grey {
   color: grey;
-  text-decoration: none;
 }
 
-.li3 {
-  padding: 38px;
+.blue {
   color: #0065fc;
-  text-decoration: none;
 }
 
-.nav a:hover {
+.nav__bar a:hover {
   color: rgb(241, 238, 238);
   color: #0065fc;
   border-top: 2px solid #0065fc;
@@ -99,24 +94,24 @@ h4 {
   padding: 0px 5px;
 }
 
-.titre-1 {
+.title--big {
   margin: 0px 20px;
 }
 
-.titre-2 {
+.title--small {
   margin: 5px 20px 10px;
 }
 
-/* Propriétés boutons */
+/* Propriétés Barre de Recherche */
 
-.btn-groupe {
+.search {
   color: white;
   margin: 10px 20px 40px;
   padding: 20px 0px;
   font-size: 1.2rem;
 }
 
-.bouton1 {
+.search__logo {
   width: 40px;
   height: 40px;
   padding: 0;
@@ -125,7 +120,7 @@ h4 {
   float: left;
 }
 
-.bouton2 {
+.search__form {
   border: grey 1px solid;
   padding: 0;
   border: 0;
@@ -135,7 +130,7 @@ h4 {
   float: left;
 }
 
-.bouton3 {
+.search__btn {
   border: 1px solid #0065fc;
   background-color: #0065fc;
   height: 40px;
@@ -147,7 +142,7 @@ h4 {
   float: left;
 }
 
-.champ {
+.search__field {
   width: 160px;
   height: 40px;
   overflow: hidden;
@@ -160,9 +155,9 @@ h4 {
   text-align: left;
 }
 
-/* Proprietes Filtres */
+/* Proprietes Boutons Filtres */
 
-.filtres {
+.filters {
   clear: left;
   display: flex;
   flex-flow: row nowrap;
@@ -170,7 +165,7 @@ h4 {
   margin: 20px;
 }
 
-.btf {
+.filters__big {
   margin: 10px;
   display: block;
   width: 135px;
@@ -178,7 +173,7 @@ h4 {
   position: relative;
 }
 
-.btf2 {
+.filters__small {
   margin: 10px;
   display: block;
   width: 110px;
@@ -186,7 +181,7 @@ h4 {
   position: relative;
 }
 
-.ft1 {
+.filters__title {
   font-size: 14px;
   font-weight: bold;
   opacity: 0.8;
@@ -196,7 +191,7 @@ h4 {
   padding: 8px;
 }
 
-.ft2 {
+.filters__logo {
   color: #0065fc;
   background-color: #deebff;
   padding: 8px;
@@ -207,7 +202,7 @@ h4 {
   z-index: 3;
 }
 
-.ft3 {
+.filters__btn {
   font-size: 0.9em;
   font-weight: bold;
   opacity: 0.8;
@@ -225,7 +220,7 @@ h4 {
   margin-right: 0;
 }
 
-.ft4 {
+.filters__logo--dog {
   color: #0065fc;
   background-color: #deebff;
   padding: 8px;
@@ -235,7 +230,7 @@ h4 {
   position: relative;
   z-index: 3;
 }
-.ft5 {
+.filters__btn--animals {
   font-size: 0.9em;
   font-weight: bold;
   opacity: 0.8;
@@ -255,7 +250,7 @@ h4 {
   margin-left: 20px;
 }
 
-.ft6 {
+.filters__btn--familial {
   font-size: 0.9em;
   font-weight: bold;
   opacity: 0.8;
@@ -274,14 +269,15 @@ h4 {
   margin-right: 15px;
 }
 
-.ft3:link {
+.filters__btn:link {
 }
 
-.ft3:visited {
+.filters__btn:visited {
 }
 
-.ft3:hover,
-.ft5:hover {
+.filters__btn:hover,
+.filters__btn--familial:hover,
+.filters__btn--animals:hover {
   background-color: #0065fc;
   color: #fff;
 }
@@ -344,7 +340,7 @@ h4 {
   flex-flow: row wrap;
   width: auto;
   height: 420px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   align-content: space-between;
 
@@ -612,7 +608,7 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-  #banniere {
+  .nav {
     width: 900px;
   }
 
@@ -677,12 +673,12 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
-  #banniere {
+  .nav {
     display: inline;
     width: 400px;
   }
 
-  .nav {
+  .nav__bar {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -709,9 +705,6 @@ footer {
   h1 {
     display: inline-block;
     overflow-wrap: break-word;
-  }
-
-  .bouton3 {
   }
 
   #hebergements {
