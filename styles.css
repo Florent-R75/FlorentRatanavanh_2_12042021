@@ -23,8 +23,8 @@
 }
 
 body {
-  background-color: white;
   font-family: "raleway-v19-regular", Arial, Helvetica, sans-serif;
+  background-color: white;
   width: 1400px;
   margin: auto;
   font-size: 16px;
@@ -288,7 +288,7 @@ h4 {
   text-align: left;
 }
 
-.info1 {
+.info__logo {
   width: 20px;
   height: 20px;
   display: inline-block;
@@ -300,7 +300,7 @@ h4 {
   padding: 0;
 }
 
-.info2 {
+.info__texte {
   font-size: 0.8em;
   text-align: center;
   color: grey;
@@ -309,7 +309,7 @@ h4 {
 
 /* Propriétés Parties Principales */
 
-#hebergements {
+#lodgings {
   margin: 0px;
   display: flex;
   justify-content: space-around;
@@ -317,7 +317,7 @@ h4 {
   align-items: stretch;
 }
 
-.Pgauche {
+.lodgings__main {
   flex: 2 1 auto;
   background-color: #f2f2f2;
   border-radius: 12px;
@@ -325,17 +325,17 @@ h4 {
   z-index: 2;
 }
 
-.Pdroite {
+.MostPopular {
   flex: 1 1 auto;
   background-color: #f2f2f2;
   border-radius: 12px;
   z-index: 1;
 }
 
-.titre {
+.lodging__title {
   margin: 30px 20px 20px;
 }
-.galerie1 {
+.lodging__gallery {
   display: flex;
   flex-flow: row wrap;
   width: auto;
@@ -348,16 +348,16 @@ h4 {
   margin: 20px;
 }
 
-.galerie1 a {
+.lodging__gallery a {
   text-decoration: none;
   color: black;
 }
 
-.galerie1 a:visited {
+.lodging__gallery a:visited {
   text-decoration: underline grey;
 }
 
-.polaroid {
+.lodging__gallery__advertisement {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
@@ -370,7 +370,7 @@ h4 {
   background: #fff;
 }
 
-.polaroid img {
+.lodging__gallery__advertisement img {
   max-width: 250px;
   height: 105px;
   margin: 10px 10px auto 10px;
@@ -382,29 +382,29 @@ h4 {
   object-fit: cover;
 }
 
-.afficher {
+.DisplayMore {
   margin: 50px 0px;
 }
-.afficher a {
+.DisplayMore a {
   padding: 25px;
   text-decoration: none;
   color: black;
   font-weight: bolder;
 }
 
-.titre-hb {
+.lodging__gallery__advertisement__title {
   font-size: 16px;
   font-weight: bold;
   padding: 10px 15px;
 }
 
-.prix {
+.price {
   font-size: 14px;
   font-weight: normal;
   padding: 0px 15px 10px;
   color: grey;
 }
-.etoile {
+.star {
   font-size: 10px;
   font-weight: normal;
   padding: 0px 15px 10px;
@@ -416,7 +416,8 @@ em {
   color: black;
   font-style: normal;
 }
-.titre-plus {
+
+.MostPopular__aside {
   display: flex;
   justify-content: flex-start;
   flex-flow: row wrap;
@@ -424,12 +425,12 @@ em {
   height: 60px;
 }
 
-.plus-pop {
+.MostPopular__title {
   display: inline-block;
   margin: 30px 20px 20px;
 }
 
-.logo-pop {
+.MostPopular__logo {
   display: inline-block;
   border: 0;
   margin: 20px 20px 20px auto;
@@ -437,14 +438,14 @@ em {
   font-size: 1rem;
 }
 
-.galerie2 {
+.MostPopular__gallery {
   display: flex;
   flex-flow: column nowrap;
   flex-direction: flex-start;
   justify-content: space-evenly;
   align-items: center;
 }
-.image2 {
+.MostPopular__gallery__wrapper {
   width: 380px;
   height: 160px;
   border-radius: 10px 14px;
@@ -453,7 +454,7 @@ em {
   box-shadow: 5px 5px #e4e3e3;
 }
 
-.polaroid2 > img {
+.MostPopular__gallery__content > img {
   max-width: 150px;
   height: 140px;
   object-fit: cover;
@@ -462,22 +463,24 @@ em {
   float: left;
 }
 
-.image2 .polaroid2 .titre-hb {
+.MostPopular__gallery__wrapper
+  .MostPopular__gallery__content
+  .lodging__gallery__advertisement__title {
   font-size: 16px;
   font-weight: bold;
   padding: 20px 10px 10px;
 }
 
-.image2 .polaroid2 .etoile {
+.MostPopular__gallery__wrapper .MostPopular__gallery__content .star {
   padding-top: 40px;
 }
 
-.image2 .polaroid2 .etoile1 {
+.MostPopular__gallery__wrapper .MostPopular__gallery__content .star1 {
   padding-top: 50px;
   color: #0065fc;
 }
 
-.container-activites {
+.activities__wrapper {
   width: 1400px;
   height: 450px;
   margin: 20px;
@@ -486,12 +489,12 @@ em {
   justify-content: space-around;
 }
 
-.container-activites a {
+.activities__wrapper a {
   text-decoration: none;
   color: black;
 }
 
-.activite-portrait {
+.activities__wrapper__portrait {
   width: 300px;
   height: 450px;
   box-shadow: 5px 5px 5px grey;
@@ -500,12 +503,12 @@ em {
   box-shadow: 5px 5px #e4e3e3;
 }
 
-.polaroid3 {
+.activities__wrapper__portrait--imageBig {
   width: 300px;
   height: 430px;
 }
 
-.polaroid3 img {
+.activities__wrapper__portrait--imageBig img {
   width: 300px;
   height: 410px;
   object-fit: none;
@@ -518,7 +521,7 @@ em {
   font-weight: bold;
   padding: auto;
 }
-.activite-duo {
+.activities__dual {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -527,7 +530,7 @@ em {
   margin-right: 35px;
 }
 
-.polaroid4 {
+.activities__wrapper__dual--imageSmall {
   width: 300px;
   height: 225px;
   margin-bottom: 65px;
@@ -535,13 +538,13 @@ em {
   box-shadow: 5px 5px 5px grey;
 }
 
-.polaroid4 img {
+.activities__wrapper__dual--imageSmall img {
   width: 300px;
   height: 180px;
   object-fit: cover;
   border-radius: 12px 12px 0px 0px;
 }
-.polaroid5 {
+.activities__wrapper__dual--imageSmall2 {
   width: 300px;
   height: 200px;
   margin-bottom: 10px;
@@ -550,14 +553,14 @@ em {
   flex: 1 1 0;
 }
 
-.polaroid5 img {
+.activities__wrapper__dual--imageSmall2 img {
   width: 300px;
   height: 119px;
   object-fit: cover;
   border-radius: 12px 12px 0px 0px;
 }
 
-.polaroid6 {
+.activities__wrapper__portrait--imageSmall4 {
   width: 100%;
   height: 45%;
   margin-bottom: 45px;
@@ -565,7 +568,7 @@ em {
   box-shadow: 5px 5px 5px grey;
 }
 
-.polaroid7 {
+.activities__wrapper__portrait--imageSmall3 {
   width: 100%;
   height: 45%;
   margin-bottom: 10px;
@@ -573,26 +576,26 @@ em {
   box-shadow: 5px 5px 5px grey;
 }
 
-.polaroid6 img {
+.activities__wrapper__portrait--imageSmall4 img {
   width: 300px;
   height: 150px;
   object-fit: cover;
   border-radius: 12px 12px 0px 0px;
 }
 
-.polaroid7 img {
+.activities__wrapper__portrait--imageSmall3 img {
   width: 300px;
   height: 160px;
   object-fit: cover;
   border-radius: 12px 12px 0px 0px;
 }
 
-.informations {
+.footer__column {
   width: 300px;
   margin: 20px 30px;
 }
 
-.informations1 a {
+.footer__content a {
   text-decoration: none;
   color: grey;
   display: inline-block;
@@ -612,19 +615,19 @@ footer {
     width: 900px;
   }
 
-  #hebergements {
+  #lodgings {
     width: 100%;
     flex-flow: row wrap;
     justify-content: flex-start;
     margin: 0;
   }
 
-  .Pgauche {
+  .lodgings__main {
     width: 900px;
     height: fit-content;
     order: 2;
   }
-  .galerie1 {
+  .lodging__gallery {
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
@@ -646,7 +649,7 @@ footer {
     object-fit: cover;
   }
 
-  .Pdroite {
+  .MostPopular {
     width: 900px;
     height: fit-content;
     margin: 10px 0px;
@@ -654,13 +657,13 @@ footer {
     order: 1;
   }
 
-  .galerie2 {
+  .MostPopular__gallery {
     flex-flow: row wrap;
     align-items: center;
     justify-content: flex-start;
     height: fit-content;
   }
-  .container-activites {
+  .activities__wrapper {
     width: 900px;
     height: fit-content;
     flex-flow: column wrap;
@@ -707,26 +710,26 @@ footer {
     overflow-wrap: break-word;
   }
 
-  #hebergements {
+  #lodgings {
     width: 400px;
     flex-flow: row wrap;
     justify-content: flex-start;
     margin: 0;
   }
 
-  .Pgauche {
+  .lodgings__main {
     width: 400px;
     height: fit-content;
     order: 2;
   }
 
-  .Pdroite {
+  .MostPopular {
     width: 400px;
     height: fit-content;
 
     order: 1;
   }
-  .galerie1 {
+  .lodging__gallery {
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
