@@ -618,27 +618,38 @@ em {
 }
 
 /* Bas de page, Construit avec des Flexbox */
+footer {
+  width: 100%;
+  /* height: 200px; */
+  margin: 20px 0px 0px;
+  /* overflow: hidden; */
 
-.footer__column {
+  display: flex;
+  flex-direction: row wrap;
+  background-color: #f2f2f2;
+}
+
+/* .footer__column { 
+  width: 380px;
+  margin: 20px 30px;
+} */
+
+.footer__content {
+  flex: 1 1 auto;
+  list-style: none;
   width: 380px;
   margin: 20px 30px;
 }
 
+.footer__content h2 {
+  padding: 15px 0px;
+}
 .footer__content a {
-  padding: 5px 5px;
+  padding: 7px 0px;
 
   display: inline-block;
   text-decoration: none;
   color: grey;
-}
-
-footer {
-  width: 100%;
-  height: 200px;
-  margin: 20px 0px 0px;
-
-  display: flex;
-  background-color: #f2f2f2;
 }
 
 /* Media Queries, Tablette */
@@ -671,20 +682,20 @@ footer {
     margin: 20px 0px;
   }
 
-  .polaroid {
-    width: 380px;
-    height: 250px;
-    margin: 10px;
-  }
+  /* .polaroid { 
+  width: 380px;
+  height: 250px;
+  margin: 10px;
+  }*/
 
-  .polaroid img {
+  /* .polaroid img {
     max-width: 350px;
     height: 120px;
     margin: 10px 10px auto 10px;
     border-radius: 8px 8px 0px 0px;
 
     object-fit: cover;
-  }
+  } */
 
   .MostPopular {
     width: 100%;
