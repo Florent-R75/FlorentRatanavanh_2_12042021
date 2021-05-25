@@ -437,7 +437,7 @@ em {
   background: #fff;
   box-shadow: 1px 0px 2px 1px rgb(250, 248, 248);
   border: 2px rgb(242, 239, 239) solid;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .MostPopular__gallery__content > img {
@@ -449,6 +449,7 @@ em {
 
   object-fit: cover;
   float: left;
+  overflow: hidden;
 }
 
 .MostPopular__gallery__wrapper
@@ -467,6 +468,10 @@ em {
 .MostPopular__gallery__wrapper .MostPopular__gallery__content .star1 {
   padding-top: 40px;
   color: #0065fc;
+}
+
+.lodging__gallery__data {
+  list-style: none;
 }
 
 /* Activites, Conteneur Flexbox General qui contient d'autres Flexbox */
