@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "raleway bold";
-  font-weight: 800;
+
   src: url("fonts/raleway/Raleway-Bold.ttf") format("truetype");
   src: url("fonts/raleway/raleway-bold-webfont.eot") format("eot");
   src: url("fonts/raleway/raleway-bold-webfont.svg") format("svg");
@@ -68,6 +68,7 @@ header {
 .nav__bar__btn {
   padding: 38px;
   text-decoration: none;
+  color: black;
 }
 
 .grey {
@@ -96,6 +97,7 @@ h1 {
 h2 {
   font-size: 1.1rem;
   font-weight: bold;
+  font-family: "raleway bold";
 }
 
 h3 {
@@ -114,8 +116,9 @@ h4 {
 
 .title--small {
   margin: 10px 35px 10px;
-  color: grey;
+
   font-weight: lighter;
+  font-size: 1.1rem;
 }
 
 /* Propriétés Barre de Recherche */
@@ -157,7 +160,7 @@ h4 {
   padding: 12px 15px 15px;
   border: rgb(241, 238, 238) 1px solid;
 
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   text-align: left;
   vertical-align: center;
@@ -173,7 +176,7 @@ h4 {
   border: 1px solid #0065fc;
   border-radius: 0px 20px 20px 0px;
 
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   background-color: #0065fc;
 
   color: white;
@@ -192,8 +195,8 @@ h4 {
 
 .filters__title {
   display: inline;
-  margin: 20px 15px;
-
+  margin: 20px 20px 15px 15px;
+  font-family: "raleway bold";
   font-size: 18px;
   font-weight: bold;
   background-color: white;
@@ -211,8 +214,8 @@ h4 {
 }
 
 .filters__logo {
-  display: inline;
-  padding: 17px;
+  display: inline-block;
+  padding: 16px 15px 17px 15px;
   border: #deebff solid;
   color: #0065fc;
   background-color: #deebff;
@@ -220,18 +223,18 @@ h4 {
   position: relative;
   top: -1px;
   right: 0px;
-  left: -9px;
+  left: -12px;
   bottom: 0;
   z-index: 3;
 }
 
 .filters__btn {
-  display: inline;
-  padding: 15px 25px 15px 50px;
-  border: 1px solid rgb(241, 238, 238);
+  display: inline-block;
+  padding: 15px 25px 15px 44px;
+  border: 2px solid rgb(240, 237, 237);
   border-radius: 0px 50px 50px 0px;
-  font-family: "raleway";
-  font-size: 18px;
+  font-family: "raleway bold";
+  font-size: 1.1rem;
   font-weight: bold;
   background-color: white;
   white-space: nowrap;
@@ -278,8 +281,8 @@ h4 {
 }
 
 .info__texte {
-  color: grey;
-  font-weight: 300;
+  font-weight: 500;
+  font-size: 1.05rem;
 }
 
 /* Propriétés Parties Principales */
@@ -359,6 +362,8 @@ h4 {
 
 .DisplayMore {
   margin: 70px 20px 20px;
+  font-family: "raleway bold";
+  font-size: 1.1rem;
 }
 .DisplayMore a {
   padding: 25px;
@@ -371,7 +376,7 @@ h4 {
 .lodging__gallery__advertisement__title {
   padding: 5px 15px;
 
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   font-family: "raleway bold";
 }
@@ -478,8 +483,8 @@ em {
   color: #0065fc;
 }
 
-.MostPopular__gallery__wrapper .MostPopular__gallery__content .star1 {
-  padding-top: 40px;
+.star1 {
+  padding-top: 30px;
   color: #0065fc;
 }
 
@@ -508,6 +513,8 @@ em {
   flex: 1;
 
   font-weight: 600;
+  font-family: "raleway bold";
+  font-size: 1rem;
 }
 
 .activities__wrapper__portrait {
@@ -529,6 +536,10 @@ em {
   flex: 1;
   height: 360px;
   object-fit: cover;
+}
+
+.activities__wrapper :nth-child(1) {
+  margin-left: 0;
 }
 
 .activities__dual {
@@ -655,7 +666,7 @@ footer {
 .footer__content {
   flex: 1 1 auto;
   list-style: none;
-  width: 380px;
+  width: 400px;
   margin: 20px 30px;
 }
 
@@ -667,7 +678,8 @@ footer {
 
   display: inline-block;
   text-decoration: none;
-  color: grey;
+  color: black;
+  font-size: 1.1rem;
 }
 
 /* Media Queries, Tablette */
