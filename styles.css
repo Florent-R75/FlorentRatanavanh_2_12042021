@@ -2,12 +2,23 @@
 
 @font-face {
   font-family: "raleway";
-  font-style: normal;
-  font-weight: 400;
 
-  src: local("fonts/raleway");
+  src: url("fonts/raleway/raleway-light-webfont.eot") format("eot");
+  src: url("fonts/raleway/raleway-light-webfont.svg") format("svg");
+  src: url("fonts/raleway/raleway-light-webfont.woff") format("woff");
+  src: url("fonts/raleway/raleway-bold-webfont.woff2") format("woff2");
+  src: url("fonts/raleway/Raleway-Light.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "raleway bold";
+  font-weight: 800;
+  src: url("fonts/raleway/Raleway-Bold.ttf") format("truetype");
+  src: url("fonts/raleway/raleway-bold-webfont.eot") format("eot");
+  src: url("fonts/raleway/raleway-bold-webfont.svg") format("svg");
+  src: url("fonts/raleway/raleway-bold-webfont.woff") format("woff");
+  src: url("fonts/raleway/raleway-bold-webfont.woff2") format("woff2");
+}
 /* Proprétés Générales */
 
 * {
@@ -17,11 +28,11 @@
 }
 
 body {
-  font-family: "raleway", Arial, Helvetica, sans-serif;
+  font-family: "raleway", "raleway bold", Arial, Helvetica, sans-serif;
   background-color: white;
   width: 1400px;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 i {
@@ -77,7 +88,8 @@ header {
 
 h1 {
   font-size: 1.35rem;
-  font-weight: bold;
+  font-family: "raleway bold";
+  font-weight: bolder;
   margin: 20px;
 }
 
@@ -103,7 +115,7 @@ h4 {
 .title--small {
   margin: 10px 35px 10px;
   color: grey;
-  font-weight: 300;
+  font-weight: lighter;
 }
 
 /* Propriétés Barre de Recherche */
@@ -193,8 +205,8 @@ h4 {
   width: 10px;
   height: 37px;
   display: inline;
-  margin-right: -35px;
-  margin-left: 5px;
+  margin-right: -25px;
+  margin-left: 11px;
   position: relative;
 }
 
@@ -217,13 +229,12 @@ h4 {
   display: inline;
   padding: 15px 25px 15px 50px;
   border: 1px solid rgb(241, 238, 238);
-  border-radius: 0px 20px 20px 0px;
-
+  border-radius: 0px 50px 50px 0px;
+  font-family: "raleway";
   font-size: 18px;
   font-weight: bold;
   background-color: white;
   white-space: nowrap;
-
   position: relative;
   top: 0;
   right: 0px;
@@ -285,7 +296,7 @@ h4 {
 .lodgings__main {
   flex: 2 1 auto;
 
-  margin: 0px 20px;
+  margin: 0px 20px 0px 0px;
   border-radius: 12px;
 
   display: flex;
@@ -362,6 +373,7 @@ h4 {
 
   font-size: 16px;
   font-weight: bold;
+  font-family: "raleway bold";
 }
 
 .price {
@@ -369,7 +381,8 @@ h4 {
 
   font-size: 14px;
   font-weight: normal;
-  color: grey;
+  /* color: grey; */
+  font-family: "raleway";
 }
 .lodging__gallery__advertisement .star {
   padding: 0px 15px 25px;
@@ -481,11 +494,11 @@ em {
 }
 
 .activities__wrapper {
-  margin: 10px 20px;
+  margin: 10px 0px;
 
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: stretch;
 }
 
@@ -499,7 +512,8 @@ em {
 
 .activities__wrapper__portrait {
   height: 420px;
-  margin: 0px 30px 0px 0px;
+  margin: 0px 30px;
+
   border: 2px rgb(242, 239, 239) solid;
   border-radius: 20px;
   box-shadow: 1px 0px 2px 1px rgb(250, 248, 248);
@@ -512,13 +526,12 @@ em {
 }
 
 .activities__wrapper__portrait > img {
-  flex: 10;
-  height: 350px;
+  flex: 1;
+  height: 360px;
   object-fit: cover;
 }
 
 .activities__dual {
-  width: 100%;
   height: 420px;
   flex: 1;
 
@@ -530,17 +543,21 @@ em {
 }
 
 .activities__dual__wrapper-top {
-  margin: 0px 30px 30px 0px;
+  margin: 0px 0px 30px 0px;
+
   border: 2px rgb(242, 239, 239) solid;
   border-radius: 20px;
   box-shadow: 1px 0px 2px 1px rgb(250, 248, 248);
-  flex: 1.8;
+  /* flex: 1.8; */
 
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
   justify-content: flex-end;
   overflow: hidden;
+
+  /* Test */
+  height: 250px;
 }
 
 .activities__dual__wrapper-top > img {
@@ -553,7 +570,8 @@ em {
 }
 
 .activities__dual__wrapper-bottom {
-  margin: 0px 30px 0px 0px;
+  margin: 0px 0px 0px 0px;
+
   flex: 1;
   border: 2px rgb(242, 239, 239) solid;
   border-radius: 20px;
