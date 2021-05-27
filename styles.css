@@ -56,9 +56,7 @@ i {
 }
 
 .nav__bar {
-  margin-left: auto;
-  padding: 40px;
-
+  padding: 50px 0px 40px 40px;
   display: flex;
   justify-content: right;
   list-style: none;
@@ -66,13 +64,14 @@ i {
 }
 
 .nav__bar__btn {
-  padding: 38px;
+  padding: 48px 34px;
   text-decoration: none;
   color: black;
 }
 
 .blue {
   color: #0065fc;
+  font-family: "raleway bold";
 }
 
 .nav__bar a:hover {
@@ -378,7 +377,7 @@ h4 {
 
   font-size: 14px;
   font-weight: normal;
-  /* color: grey; */
+
   font-family: "raleway";
 }
 .lodging__gallery__advertisement .star {
@@ -391,9 +390,6 @@ h4 {
 
 em {
   font-family: "raleway bold";
-  /* font-weight: bold; 
-  color: black;
-  font-style: normal;*/
 }
 
 /* Side Bar */
@@ -420,12 +416,11 @@ em {
 }
 
 .MostPopular__title {
-  margin: 23px 20px 0px;
+  margin: 45px 20px 0px;
 }
 
 .MostPopular__logo {
-  margin: 43px;
-  font-size: 20px;
+  margin: 45px 25px 0px 0px;
 }
 
 .MostPopular__gallery {
