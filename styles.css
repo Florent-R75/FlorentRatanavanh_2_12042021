@@ -522,8 +522,9 @@ em {
 
 .activities__wrapper__portrait > img {
   flex: 1;
-  height: 360px;
+  height: 366px;
   object-fit: cover;
+  object-position: 36% 0%;
 }
 
 .activities__wrapper :nth-child(1) {
@@ -543,29 +544,24 @@ em {
 
 .activities__dual__wrapper-top {
   margin: 0px 0px 30px 0px;
-
   border: 2px rgb(242, 239, 239) solid;
   border-radius: 20px;
-  box-shadow: 1px 0px 2px 1px rgb(250, 248, 248);
+  box-shadow: 1px 0px 2px 1px rgb(250 248 248);
   /* flex: 1.8; */
-
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
   justify-content: flex-end;
   overflow: hidden;
-
-  /* Test */
-  height: 250px;
+  height: 230px;
 }
 
 .activities__dual__wrapper-top > img {
   width: 100%;
-  height: 195px;
+  height: 198px;
   border-radius: 20px 20px 0px 0px;
-
   object-fit: cover;
-  object-position: center;
+  object-position: center 35%;
 }
 
 .activities__dual__wrapper-bottom {
@@ -585,10 +581,10 @@ em {
 
 .activities__dual__wrapper-bottom > img {
   width: 100%;
-  height: 85px;
+  height: 107px;
   flex: 2;
   border-radius: 20px 20px 0px 0px;
-  object-position: center;
+  object-position: center 20%;
   object-fit: cover;
 }
 
@@ -632,6 +628,7 @@ em {
   height: 165px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
+  object-position: center 10%;
 }
 
 /* Bas de page, Construit avec des Flexbox */
