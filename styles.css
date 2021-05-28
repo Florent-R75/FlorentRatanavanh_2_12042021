@@ -392,7 +392,7 @@ h4 {
 
 .lodging__gallery {
   width: auto;
-  height: 410px;
+  /* height: 410px; */
 
   margin: 0px 30px 0px 20px;
   border-radius: 12px;
@@ -433,7 +433,7 @@ h4 {
 }
 
 .DisplayMore {
-  margin: 60px 20px 20px;
+  margin: 30px 20px 20px;
   font-family: "raleway bold";
   font-size: 1.1rem;
 }
@@ -446,23 +446,20 @@ h4 {
 }
 
 .lodging__gallery__advertisement__title {
-  padding: 5px 15px;
-
+  padding: 5px 10px;
   font-size: 1rem;
   font-weight: bold;
   font-family: "raleway bold";
 }
 
 .price {
-  padding: 0px 15px 10px;
-
-  font-size: 14px;
+  padding: 0px 10px 10px;
+  font-size: 0.9rem;
   font-weight: normal;
-
   font-family: "raleway";
 }
-.lodging__gallery__advertisement .star {
-  padding: 0px 15px 25px;
+.star {
+  padding: 0px 10px 0px;
 
   font-size: 10px;
   font-weight: normal;
@@ -513,7 +510,7 @@ em {
   align-items: stretch;
 }
 
-.MostPopular__gallery__wrapper {
+/* .MostPopular__gallery__wrapper { 
   width: 360px;
   height: 150px;
   margin: 10px 10px 15px;
@@ -524,7 +521,7 @@ em {
   background: #fff;
   box-shadow: 1px 0px 2px 1px rgb(250, 248, 248);
   border: 2px rgb(242, 239, 239) solid;
-  /* overflow: hidden; */
+   overflow: hidden;
 }
 
 .MostPopular__gallery__content > img {
@@ -563,6 +560,66 @@ em {
 
 .lodging__gallery__data {
   list-style: none;
+}*/
+
+.MostPopular__gallery__wrapper {
+  /* width: 360px; */
+  /* height: 150px; */
+
+  margin: 10px 10px 15px;
+  border-radius: 20px;
+
+  flex: 1 1 auto;
+
+  background: #fff;
+  box-shadow: 1px 0px 2px 1px rgb(250, 248, 248);
+  border: 2px rgb(242, 239, 239) solid;
+
+  overflow: hidden;
+}
+
+.MostPopular__gallery__content {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+}
+
+.MostPopular__gallery__content > img {
+  width: 260px;
+  height: 150px;
+  padding: 5px 10px 5px 5px;
+  border-radius: 20px 0px 0px 20px;
+  flex: 1;
+  object-fit: cover;
+  /* float: left; */
+  overflow: hidden;
+}
+
+.MostPopular__gallery__wrapper
+  .MostPopular__gallery__content
+  .lodging__gallery__advertisement__title {
+  padding: 15px 10px 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.MostPopular__gallery__wrapper .MostPopular__gallery__content .star {
+  padding-top: 45px;
+  color: #0065fc;
+}
+
+.star1 {
+  padding: 40px 10px 0px;
+  color: #0065fc;
+}
+
+.grey {
+  color: rgb(223, 219, 219);
+}
+
+.lodging__gallery__data {
+  list-style: none;
+  flex: 1.8;
 }
 
 /* Activites, Conteneur Flexbox General qui contient d'autres Flexbox */
@@ -592,7 +649,7 @@ em {
 
 .activities__wrapper__portrait,
 .activities__wrapper__portrait1 {
-  height: 420px;
+  /* height: 420px; */
   margin: 0px 30px;
 
   border: 2px rgb(242, 239, 239) solid;
@@ -640,7 +697,7 @@ em {
   border: 2px rgb(242, 239, 239) solid;
   border-radius: 20px;
   box-shadow: 1px 0px 2px 1px rgb(250 248 248);
-  /* flex: 1.8; */
+  flex: 1.8;
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
@@ -762,18 +819,20 @@ footer {
 
 /* Media Queries, Tablette */
 
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-device-width: 768px) {
   body {
     width: 100%;
     /* background-color: yellow; */
   }
+
   #lodgings {
     width: 100%;
     margin: 0;
 
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
+
   .lodgings__main {
     width: 100%;
     height: fit-content;
@@ -1022,13 +1081,11 @@ footer {
   .MostPopular__title {
     margin: 40px 0px 0px 30px;
   }
-
   .MostPopular {
     width: 100%;
     margin-top: 0px;
     overflow: hidden;
     border-radius: 0px;
-    order: 1;
   }
 
   .MostPopular__logo {
@@ -1047,11 +1104,12 @@ footer {
 
   .MostPopular__gallery__content > img {
     width: 190px;
+    height: 195px;
   }
 
   .price {
     font-size: 1.2rem;
-    padding: 0px 15px 5px;
+    padding: 0px 10px 5px;
   }
 
   .star1 {
@@ -1059,8 +1117,8 @@ footer {
     font-size: 1.3rem;
   }
 
-  .lodging__gallery__advertisement .star {
-    padding: 5px 15px 25px;
+  .star {
+    padding: 0px 10px 0px;
     font-size: 1.3rem;
   }
 
@@ -1072,7 +1130,7 @@ footer {
     padding: 10px 30px 30px;
   }
 
-  /* Activites */
+  /* Media Queries, Activites */
 
   #activities {
     margin: 0px 0px;
