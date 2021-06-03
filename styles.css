@@ -30,9 +30,10 @@
 body {
   font-family: "raleway", "raleway bold", Arial, Helvetica, sans-serif;
   background-color: white;
-  width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 
 i {
@@ -406,7 +407,7 @@ h4 {
 
 .lodging__gallery__advertisement {
   width: 235px;
-  height: 200px;
+  height: 205px;
   flex: 1 1 auto;
   margin: 0px 10px 20px;
   border: 2px rgb(242, 239, 239) solid;
@@ -817,6 +818,26 @@ footer {
   font-size: 1.1rem;
 }
 
+/* Media Queries 1024px */
+
+@media screen and (max-device-width: 1024px) {
+  body {
+    width: 100%;
+  }
+
+  #lodgings {
+    width: 100%;
+  }
+
+  .lodging__gallery {
+    flex-flow: row wrap;
+  }
+
+  /* .MostPopular__gallery__content > img { */
+  /* height; */
+  /* } */
+}
+
 /* Media Queries, Tablette */
 
 @media screen and (max-device-width: 768px) {
@@ -1190,5 +1211,9 @@ footer {
     width: 100%;
     height: fit-content;
     flex-flow: column wrap;
+  }
+
+  .pr0 {
+    padding: 0;
   }
 }
