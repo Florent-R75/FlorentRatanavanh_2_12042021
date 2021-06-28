@@ -106,6 +106,9 @@ h4 {
 
 .title--big {
   margin: 0px 30px;
+  font-size: 1.35rem;
+  font-family: "raleway bold";
+  font-weight: bolder;
 }
 
 .title--small {
@@ -120,18 +123,19 @@ h4 {
 .search {
   margin: 20px 20px 70px;
   padding: 10px 0px 20px;
-  font-size: 1.2rem;
-  color: white;
+  font-size: 1rem;
 }
 
 .search__logo {
   width: 50px;
   height: 50px;
-  padding: 10px;
-  margin: 0px 0px 10px 10px;
+  padding: 13px 10px 5px;
+
   border: solid rgb(241, 238, 238) 1px;
   border-radius: 20px 0px 0px 20px;
   float: left;
+  background-color: #f2f2f2;
+  text-align: center;
 }
 
 .search__form {
@@ -319,6 +323,9 @@ h4 {
 
 .lodging__title {
   margin: 0px 10px 20px;
+  font-size: 1.35rem;
+  font-family: "raleway bold";
+  font-weight: bolder;
 }
 
 .lodging__gallery {
@@ -369,6 +376,9 @@ h4 {
   font-size: 1.1rem;
   text-decoration: none;
   cursor: pointer;
+  font-size: 1.1rem;
+
+  font-family: "raleway bold";
 }
 
 .lodging__gallery__advertisement__title {
@@ -403,7 +413,6 @@ em {
 
   border-radius: 12px;
   padding: 45px 30px;
-
   display: flex;
   flex-flow: column nowrap;
 
@@ -417,10 +426,19 @@ em {
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
+  font-size: 1.35rem;
 }
 
 .mostPopular__title {
   margin: 0px 10px 20px;
+
+  font-size: 1.35rem;
+  font-family: "raleway bold";
+  font-weight: bolder;
+}
+
+.mostPopular__logo {
+  font-size: 1.2rem;
 }
 
 .mostpopular__gallery {
@@ -503,6 +521,9 @@ em {
 
 #activities {
   margin: 30px 30px;
+  font-size: 1.35rem;
+  font-family: "raleway bold";
+  font-weight: bolder;
 }
 
 .activities__title {
@@ -734,6 +755,9 @@ footer {
 
   .mostPopular__title {
     margin: 0px 10px 20px;
+    font-size: 1.35rem;
+    font-family: "raleway bold";
+    font-weight: bolder;
   }
 
   .star1 {
@@ -1001,6 +1025,9 @@ footer {
 
   .lodging__title {
     margin-left: 15px;
+    font-size: 1.35rem;
+    font-family: "raleway bold";
+    font-weight: bolder;
   }
 
   h1 {
@@ -1075,6 +1102,7 @@ footer {
 
   .title--big {
     margin: 0px 30px;
+    font-size: 1.5rem;
   }
 
   .title--small {
@@ -1089,6 +1117,7 @@ footer {
     width: 70px;
     height: 70px;
     font-size: 1.2rem;
+    padding: 22px 10px 5px;
   }
 
   .search__form {
@@ -1115,8 +1144,9 @@ footer {
   }
 
   .search__glass {
-    display: inline;
+    display: inline-block;
     font-size: 1.6rem;
+    padding: 4px 10px 0px 16px;
   }
 
   .filters__main {
@@ -1173,6 +1203,9 @@ footer {
 
   .lodging__title {
     margin: 0px 10px 10px;
+    font-size: 1.5rem;
+    font-family: "raleway bold";
+    font-weight: bolder;
   }
 
   .lodging__gallery {
@@ -1194,7 +1227,7 @@ footer {
     font-size: 1.3rem;
   }
 
-  .lodging__title h1 {
+  .lodging__title {
     margin: 0px;
   }
 
@@ -1205,6 +1238,10 @@ footer {
     border-radius: 0px;
     padding: 40px 20px;
     margin: 0px;
+  }
+
+  .mostPopular__title {
+    font-size: 1.5rem;
   }
 
   .mostpopular__gallery__content {
@@ -1234,6 +1271,9 @@ footer {
 
   #activities {
     margin: 0;
+    font-size: 1.5rem;
+    font-family: "raleway bold";
+    font-weight: bolder;
   }
 
   .activities__title {
