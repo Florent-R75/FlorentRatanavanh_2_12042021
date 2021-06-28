@@ -162,10 +162,10 @@ h4 {
 .search__btn {
   height: 49px;
   width: 117px;
+  font-size: 1.1rem;
   padding: 12px 8px 15px;
   border: 1px solid #0065fc;
   border-radius: 0px 20px 20px 0px;
-  font-size: 1.1rem;
   background-color: #0065fc;
   color: white;
   float: left;
@@ -209,7 +209,7 @@ h4 {
 }
 
 .familial {
-  margin-right: 125px;
+  margin-right: 115px;
 }
 
 .filters_line {
@@ -363,7 +363,7 @@ h4 {
   object-fit: cover;
 }
 
-.DisplayMore {
+.displaymore {
   margin: 30px 20px 20px;
   font-family: "raleway bold";
   font-size: 1.1rem;
@@ -398,7 +398,7 @@ em {
 
 /* Side Bar */
 
-.MostPopular {
+.mostpopular {
   flex: 1 1 auto;
 
   border-radius: 12px;
@@ -411,7 +411,7 @@ em {
   z-index: 1;
 }
 
-.MostPopular__aside {
+.mostpopular__aside {
   height: 60px;
 
   display: flex;
@@ -419,11 +419,11 @@ em {
   flex-flow: row nowrap;
 }
 
-.MostPopular__title {
+.mostPopular__title {
   margin: 0px 10px 20px;
 }
 
-.MostPopular__gallery {
+.mostpopular__gallery {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -444,7 +444,7 @@ em {
   overflow: hidden;
 }
 
-.MostPopular__gallery__content {
+.mostpopular__gallery__content {
   display: flex;
   flex-flow: row nowrap;
   align-items: stretch;
@@ -463,7 +463,7 @@ em {
   overflow: hidden;
 }
 
-.MostPopular__gallery__content > img {
+.mostpopular__gallery__content > img {
   width: 260px;
   height: 150px;
   padding: 5px 10px 5px 5px;
@@ -474,13 +474,13 @@ em {
   overflow: hidden;
 }
 
-.MostPopular__gallery__content .lodging__gallery__advertisement__title {
+.mostpopular__gallery__content .lodging__gallery__advertisement__title {
   padding: 15px 10px 5px;
   font-size: 16px;
   font-weight: bold;
 }
 
-.MostPopular__gallery__content .star {
+.mostpopular__gallery__content .star {
   padding-top: 45px;
   color: #0065fc;
 }
@@ -701,7 +701,7 @@ footer {
     min-width: 140px;
     position: relative;
   }
-  .MostPopular {
+  .mostpopular {
     width: 100%;
 
     margin: 20px;
@@ -710,12 +710,12 @@ footer {
     order: 1;
   }
 
-  .MostPopular__gallery {
+  .mostpopular__gallery {
     flex-flow: row wrap;
     justify-content: space-between;
   }
 
-  .MostPopular__gallery__content {
+  .mostpopular__gallery__content {
     flex: 0 1 auto;
 
     margin-right: 20px;
@@ -724,15 +724,15 @@ footer {
     margin: 0px 0px 20px;
   }
 
-  .MostPopular__gallery :nth-child(3) {
+  .mostpopular__gallery :nth-child(3) {
     flex-shrink: 2;
   }
 
-  .MostPopular__gallery__content > img {
+  .mostpopular__gallery__content > img {
     max-width: 180px;
   }
 
-  .MostPopular__title {
+  .mostPopular__title {
     margin: 0px 10px 20px;
   }
 
@@ -807,7 +807,7 @@ footer {
   }
 
   .footer__content {
-    width: 230px;
+    width: 320px;
   }
 
   footer {
@@ -815,8 +815,10 @@ footer {
   }
 }
 
+/* Breaking Point  947px */
+
 @media screen and (max-device-width: 947px) {
-  .MostPopular__gallery__content {
+  .mostpopular__gallery__content {
     width: 275px;
   }
 
@@ -833,6 +835,17 @@ footer {
     margin-left: 145px;
   }
 }
+
+/* Breaking Point  820px */
+
+@media screen and (max-device-width: 820px) {
+  .footer__content {
+    width: 230px;
+  }
+}
+
+/* Breaking Point  744px */
+
 @media screen and (max-device-width: 744px) {
   .activities__dual__wrapper-top,
   .activities__dual__wrapper-bottom,
@@ -844,6 +857,8 @@ footer {
   }
 }
 
+/* Breaking Point  690px */
+
 @media screen and (max-device-width: 690px) {
   .activities__dual__wrapper-top,
   .activities__dual__wrapper-bottom,
@@ -854,18 +869,18 @@ footer {
     width: 260px;
   }
 
-  .MostPopular__gallery {
+  .mostpopular__gallery {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
   }
 
-  .MostPopular__gallery__content {
+  .mostpopular__gallery__content {
     width: 100%;
   }
 
   .footer__content {
-    width: 165px;
+    width: 200px;
   }
 
   .romantique {
@@ -876,6 +891,8 @@ footer {
     margin-left: 30px;
   }
 }
+
+/* Breaking Point  660px */
 
 @media screen and (max-device-width: 660px) {
   .nav {
@@ -974,7 +991,7 @@ footer {
     margin-left: 78px;
   }
 
-  .MostPopular {
+  .mostpopular {
     margin: 0;
   }
 
@@ -1014,7 +1031,7 @@ footer {
     padding: 45px 20px;
   }
 
-  .DisplayMore {
+  .displaymore {
     margin: 0px 15px;
   }
 
@@ -1034,7 +1051,7 @@ footer {
   }
 }
 
-/* Media Queries Telephone */
+/* Breaking Point  480px */
 
 @media screen and (max-device-width: 480px) {
   body {
@@ -1042,37 +1059,6 @@ footer {
 
     margin: none;
     padding: 0;
-  }
-
-  .nav {
-    width: 100%;
-    display: block;
-  }
-
-  .nav__bar {
-    width: 100%;
-    margin: 0px 0px 35px;
-    padding: 15px 0px;
-    border-bottom: 2px solid rgb(232, 227, 227);
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .nav__bar__btn {
-    flex: 1;
-    font-size: 1.2rem;
-    padding: 15px 80px 15px 70px;
-  }
-
-  .nav__bar a:hover {
-    border-top: none;
-    border-bottom: 2px solid #0065fc;
-  }
-
-  .nav__bar :nth-child(2) {
-    padding-right: 0px;
   }
 
   .sign__in {
@@ -1097,7 +1083,7 @@ footer {
   }
 
   .search {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .search__logo {
     width: 70px;
@@ -1134,7 +1120,11 @@ footer {
   }
 
   .filters__main {
-    margin: 90px 0px 40px 20px;
+    margin: 90px 0px 0px 20px;
+  }
+
+  .info {
+    margin: 30px 0px;
   }
 
   .filters_wrapper {
@@ -1167,6 +1157,7 @@ footer {
 
   .animaux {
     margin-left: 78px;
+    margin-bottom: 0;
   }
 
   #lodgings {
@@ -1207,11 +1198,7 @@ footer {
     margin: 0px;
   }
 
-  .MostPopular {
-    padding: 30px;
-  }
-
-  .MostPopular {
+  .mostpopular {
     width: 100%;
     margin-top: 0px;
     overflow: hidden;
@@ -1220,13 +1207,13 @@ footer {
     margin: 0px;
   }
 
-  .MostPopular__gallery__content {
+  .mostpopular__gallery__content {
     height: 200px;
     overflow: hidden;
     width: 100%;
   }
 
-  .MostPopular__gallery__content > img {
+  .mostpopular__gallery__content > img {
     width: 190px;
     height: 195px;
   }
