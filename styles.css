@@ -666,7 +666,7 @@ footer {
   margin: 20px 0px 0px;
 
   display: flex;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
   background-color: #f2f2f2;
 }
 
@@ -691,7 +691,7 @@ footer {
 
 /* Media Queries 1090px */
 
-@media screen and (max-device-width: 1090px) {
+@media screen and (max-width: 1090px) {
   body {
     margin: 0;
   }
@@ -841,7 +841,7 @@ footer {
 
 /* Breaking Point  947px */
 
-@media screen and (max-device-width: 947px) {
+@media screen and (max-width: 947px) {
   .mostpopular__gallery__content {
     width: 275px;
   }
@@ -862,7 +862,7 @@ footer {
 
 /* Breaking Point  820px */
 
-@media screen and (max-device-width: 820px) {
+@media screen and (max-width: 820px) {
   .footer__content {
     width: 230px;
   }
@@ -870,7 +870,7 @@ footer {
 
 /* Breaking Point  744px */
 
-@media screen and (max-device-width: 744px) {
+@media screen and (max-width: 744px) {
   .activities__dual__wrapper-top,
   .activities__dual__wrapper-bottom,
   .activities__dual__wrapper-top2,
@@ -883,7 +883,7 @@ footer {
 
 /* Breaking Point  690px */
 
-@media screen and (max-device-width: 690px) {
+@media screen and (max-width: 690px) {
   .activities__dual__wrapper-top,
   .activities__dual__wrapper-bottom,
   .activities__dual__wrapper-top2,
@@ -918,7 +918,7 @@ footer {
 
 /* Breaking Point  660px */
 
-@media screen and (max-device-width: 660px) {
+@media screen and (max-width: 660px) {
   .nav {
     width: 100%;
     display: block;
@@ -1080,11 +1080,11 @@ footer {
 
 /* Breaking Point  480px */
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   body {
     min-width: 479px;
 
-    margin: none;
+    margin: 0;
     padding: 0;
   }
 
